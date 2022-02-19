@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 
 const AddUser = () => {
-  // const [users, setUsers] = useState({});
   const nameRef = useRef();
   const emailRef = useRef();
   const addressRef = useRef();
@@ -23,12 +22,13 @@ const AddUser = () => {
       .then((data) => {
         if (data.insertedId) {
           alert(`successfully added user!`);
+          //form clear
           e.target.reset();
         } else {
           alert(`user not be exists!`);
         }
       });
-
+      //form clear(2nd way)
     // nameRef.current.value = "";
     // emailRef.current.value = "";
     // addressRef.current.value = "";

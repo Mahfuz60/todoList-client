@@ -41,7 +41,7 @@ const Users = () => {
             <h4 key={id}>
               {user.name},{user.email},{user.address}
               <Link to={`/users/update/${user._id}`}>
-                {" "}
+               
                 <button>update</button>
               </Link>
               <button onClick={() => handleDeletedUser(user._id)}>delete</button>
