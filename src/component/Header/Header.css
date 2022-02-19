@@ -1,0 +1,15 @@
+.nav-header{
+  padding: 10px;
+  font-size:25px;
+  background-color: aquamarine;
+  
+}
+.nav-header a{
+  text-decoration:none;
+  margin-right: 10px;
+  color:black;
+  font-weight:bold;
+}
+.nav-header a:hover{
+  color:rgb(247, 66, 6);
+}
